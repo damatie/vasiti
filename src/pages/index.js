@@ -26,10 +26,12 @@ function Home() {
   const [story, setStory] = useState()
   const [location, setLocation] = useState()
   const [user, setUser] = useState()
+  const [show, setShow] = useState(false)
   // const [vendor, setVendor] = useState()
   const [theArray, setTheArray] = useState([]);
 
   const addEntryClick = () => {
+    setShow(true)
     setTheArray([...theArray, 
       { Fname:firstname,
         Lname:lastname,
@@ -38,6 +40,7 @@ function Home() {
         Location:location
       }
     ]);
+    
   };
   return (
     <div className="mainContainer">
