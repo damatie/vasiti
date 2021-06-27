@@ -50,7 +50,7 @@ function Home() {
   return (
     <div className="mainContainer">
       <nav className="d-flex topNav ">
-      <div className="logoContainer"><img src={Logo} alt="logo"/></div>
+      <div className="logoContainer"><a href="/"><img src={Logo} alt="logo"/></a></div>
       <div className="flex-grow-1"></div>
       <div>
         <ul>
