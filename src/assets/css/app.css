@@ -1,0 +1,405 @@
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
+    color: #474747;
+}
+.appContainer{
+  max-width: 1200px;
+  margin: 0px auto;
+}
+.topNav{
+  line-height: 2;
+  max-width: 1200px;
+  margin: 1px auto;
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.logoContainer{
+  background:none;
+}
+.topNav ul{
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+}
+.topNav ul li{
+  font-weight: 400;
+  display: inline;
+  line-height: 2.6;
+  padding: 4px 10px; 
+}
+
+.topNav ul li a{
+ color:  #242120;
+ text-decoration: none;
+}
+.topNav ul li a:hover{
+  color:  #242120bd;
+  text-decoration: none;
+ }
+.subNav{
+  padding-top: 12px;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.04);
+}
+.subNav ul{
+  font-size: 13px;
+  padding-left: 10px;
+  padding-right: 10px;
+  list-style: none;
+}
+.subNav ul li{
+  font-weight: 400;
+  display: inline;
+  padding: 1px 10px;
+}
+
+.subNav ul li a{
+ color:  #242120;
+ text-decoration: none;
+}
+
+.subNav ul li a:hover{
+  color:  #242120bd;
+  text-decoration: none;
+ }
+ 
+.btn{
+  border: none;
+}
+.btn:focus{
+  outline: none;
+  box-shadow: none;
+}
+.btnSm{
+  padding: 5px 10px;
+  font-size: 13px;
+  font-weight: 500;
+}
+.btnMd{
+  padding: 8px 10px;
+  font-size: 16px;
+  line-height: 1.2;
+  /* font-weight: 500; */
+}
+
+.btnMd-x{
+  font-family: 'Inter', sans-serif;
+  border-radius: 8px;
+  padding: 15px 27px;
+  font-size: 16px;
+  line-height: 1.2;
+  /* font-weight: 500; */
+}
+.btnOR{
+  background: #FF5C00;
+  box-shadow: 1px 4px 8px rgba(239, 88, 3, 0.2);
+  color: white;
+}
+
+.btnOR:hover{
+  background: #ff5e00c0;
+  color: white;
+}
+
+.textLg{
+  font-size: 48px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.textLg-s{
+  font-size: 40px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.textMd{
+  font-size: 32px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+
+.textMd-s{
+  font-size: 24px;
+  line-height: 1.1;
+  font-weight: 700;
+}
+.textSm{
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+.TitleMd{
+  font-size: 16px;
+  font-weight: 500;
+}
+.textSm-s{
+  font-size: 14px;
+  line-height: 1.7;
+  font-weight: 400;
+}
+
+
+.color-black{
+  color: black;
+}
+.color-gray{
+  color: #494949;
+}
+.color-white{
+  color: white;
+}
+.color-dark-blue{
+  color:#0D019A;
+}
+
+.color-dark-orange{
+  color:#FF5C00;
+}
+
+.color-dark-green{
+  color:#049A01;
+}
+
+.bg-white{
+  background: white;
+}
+.bg-light-orange{
+  background: #FFF8F5;
+}
+.bg-dark{
+  background: #222222; 
+}
+.bg-mid-night{
+  background: #25201D; 
+}
+.bg-ligh-blue{
+  background: #EEF8FF;
+}
+
+.bg-ligh-green{
+  background: #F0FFEE;
+}
+
+.bannerText{
+  padding-top: 170px;
+  word-wrap: break-word;
+}
+.Mobile{
+  display: none;
+}
+
+ img{
+  width: 100%;
+}
+.captionBody{
+  font-size: 17px;
+}
+.B-StoryContent{
+  padding-top: 150px;
+  padding-bottom: 100px;
+}
+
+.n-marginSm{
+  margin-top: -2px;
+}
+
+.n-marginMd{
+  margin-top: -20px;
+}
+.overlap-c{
+  margin-top: -105px;
+  position: relative;
+  z-index: 1 !important;
+}
+.overlap-v{
+  margin-top: -60px;
+  position: relative;
+  z-index: 1 !important;
+}
+.full-section-img {
+  text-align: center;
+}
+
+.btnImg{
+  max-width: 250px !important;
+}
+
+.bgImg{
+  /* max-width: 500px; */
+  position: absolute;
+  top: -550px;
+  left: -30px;
+}
+
+.tag{
+  padding: 6px 10px;
+  font-size: 13px;
+  border-radius: 0.35rem;
+}
+.tag-outline{
+  border:solid 1px whitesmoke;
+}
+
+.tag-outline-v{
+  border:1px solid rgba(255, 92, 0, 0.4);
+}
+
+.tag-fill{
+  font-weight: 500;
+}
+
+.personImg img{
+  max-width: 200px;
+}
+.card{
+  border: solid 0px; 
+}
+
+.footerPhone{
+  max-width: 300px;
+  position: relative;
+  margin-top: -80px;
+  z-index: 1;
+}
+
+.inputContainer{
+  padding:9px 5px;
+  padding-left:10px;
+  padding-bottom: 10px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+}
+
+.inputContainer input{
+  width: 60%;
+  background: none;
+  color: whitesmoke;
+  border: none;
+}
+
+.inputContainer input:focus{
+  outline: none;
+  box-shadow: none;
+}
+.footerLink{
+  max-width: 1000px;
+}
+.footerLink a{
+  line-height: 2.5;
+  color: white;
+  font-size: 14px;
+  font-weight: normal;
+  text-decoration: none;
+}
+.footerLink a:hover{
+  color: #ffffffbd;
+}
+
+.socialIcon img{
+  padding: 2px;
+  width: 26px;
+}
+
+.modalHeader{
+  font-family: 'Inter', sans-serif;
+  padding-top: 20px;
+  text-align: center !important;
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: black !important;
+}
+.modal-footer{
+  border: none;
+  padding-bottom: 30px;
+}
+
+input,textarea{
+  border-radius:8px;
+  background: white;
+}
+
+textarea:focus,input:focus{
+  outline: none;
+  box-shadow: none;
+}
+.tellStroyForm span{
+  font-size: 14px;
+}
+.tellStroyForm input,textarea{
+  margin-top: 5px;
+  width: 100%;
+  border: solid 1px #EAEAEA;
+  padding: 12px 10px;
+}
+.tellStroyForm .form-control{
+  padding: 6px;
+  padding-left: 10px !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.tellStroyForm .form-control:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+.tellStroyForm input:focus,textarea:focus{
+  border: solid 1px #FF5C00;
+}
+
+.tellStroyForm .radio-btn{
+  width: auto!important;
+  padding: auto !important;
+}
+
+@media (max-width: 699px) and (min-width: 320px) {
+  .topNav{
+    margin-top: -2px;
+    padding-left: 10px;
+    position: fixed;
+    width: 100%;
+    background: white;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    box-shadow: 1px 4px 4px rgba(0, 0, 0, 0.04);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+  .topNav ul{
+    display: none;
+  }
+  .subNav{
+    display: none !important;
+  }
+  .bannerText{
+    padding-top: 100px;
+    word-wrap: break-word;
+  }
+  .textLg{
+    font-size: 39px;
+    line-height: 1.1;
+    font-weight: 700;
+  }
+  .full-section-img {
+    text-align: center;
+    margin-bottom: -70px;
+  }
+  
+  .Large{
+    display: none;
+  }
+  .Mobile{
+    display: block;
+  }
+
+  .B-StoryContent{
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+}
