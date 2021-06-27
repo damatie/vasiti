@@ -365,6 +365,7 @@ textarea:focus,input:focus{
     padding-left: 10px;
     position: fixed;
     width: 100%;
+    z-index: 2;
     background: white;
     padding-bottom: 10px;
     padding-right: 10px;
@@ -377,6 +378,7 @@ textarea:focus,input:focus{
   .subNav{
     display: none !important;
   }
+  
   .bannerText{
     padding-top: 100px;
     word-wrap: break-word;

@@ -140,6 +140,7 @@ function Home() {
             <div className="captionBody mt-3 mb-5">
             I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back! I had the best experience shopping with vasiti. Usability of the website was great, very good customer service, an all round great experience. I would definately be coming back!
             </div>
+            
             <button className="btn"><img src={Btn2Img} className="btnImg mb-5" alt="button" data-bs-toggle="modal" data-bs-target="#exampleModal"/></button>
           </div>
             <div className="col-lg-7  full-section-img p-5 Large">
@@ -334,6 +335,7 @@ function Home() {
               </div>
             </div>
             <div class="modal-footer">
+              <button type="button" class="btn bg-dark color-white btnMd-x" data-bs-dismiss="modal">Close</button>
               <button type="button"   class="btn btnMd-x  btnOR" onClick={addEntryClick}>Share your story! </button>
             </div>
           </div>
