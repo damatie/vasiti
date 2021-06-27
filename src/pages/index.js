@@ -19,6 +19,7 @@ import Fb from '../assets/img/fb.png';
 import Ig from '../assets/img/ig.png';
 import Tw from '../assets/img/tw.png';
 import In from '../assets/img/in.png';
+import Fed from '../assets/img/f1.png';
 
 function Home() {
   const [firstname, setFirstname] = useState()
@@ -41,6 +42,10 @@ function Home() {
       }
     ]);
     
+  };
+
+  const closeEntryClick = () => {
+    setShow(false)
   };
   return (
     <div className="mainContainer">
@@ -104,12 +109,12 @@ function Home() {
       <div className="container-fluid pt-5 pb-5  bg-white overlap-c">
         <div className="row appContainer text-left mt-5 ">
           {theArray.length === 0 ? 
-          "No Story found" :
+          <div><h1 className="color-light text-center">No Story Found </h1></div> :
             
         
           theArray.map(entry =>
           
-            <div className="col-lg-4 pb-3 mb-4 card mb-5" > 
+            <div className="col-lg-4 pb-3 mb-3 card mb-5" > 
             {/* { (entry.User==="cutomer") ? { display:'block'} : {display : 'none'} }  */}
               <div className="personImg text-left"> <img src={P1Img} alt="person"/></div>
               <div className="personName mb-1 mt-4 mb-3"> <span className="textMd-s">{entry.Fname} {entry.Lname}</span></div>
@@ -219,7 +224,7 @@ function Home() {
           <div className="col-lg-6 text-center">
           <img src={PhoneImg} className="footerPhone" alt="app"/>
           </div>
-          <div className="col-lg-5 text-left pt-2 color-white">
+          <div className="col-lg-5 text-left pt-2 color-white ">
             <div className="textLg-s">Be a  member of our community 🎉</div>
             <div className="textSm-s">We’d make sure you’re always first to know what’s happening on  Vasiti—thus, the world.</div>
             <div className="mt-4">
@@ -231,7 +236,7 @@ function Home() {
           </div>
         </div>
         <div className="row appContainer mt-5 pt-5 color-white footerLink">
-          <div className="col-lg-2 col-6">
+          <div className="col-lg-2 col-6 mb-3">
           <span className="TitleMd"> Company</span>
           <div className="mt-4 ">
             <a href="#about"> About us</a><br/>
@@ -240,7 +245,7 @@ function Home() {
             <a href="#about"> Press & Media</a><br/>
           </div>
           </div>
-          <div className="col-lg-2 col-6">
+          <div className="col-lg-2 col-6 mb-3">
             <span className="TitleMd"> Products</span>
             <div className="mt-4 ">
               <a href="#about">Marketplace</a><br/>
@@ -250,7 +255,7 @@ function Home() {
               <a href="#about">Services</a><br/>
             </div>
           </div>
-          <div className="col-lg-2 col-6">
+          <div className="col-lg-2 col-6 mb-3">
             <span className="TitleMd"> Careers</span>
             <div className="mt-4 ">
               <a href="#about">Become a Campus Rep</a><br/>
@@ -259,7 +264,7 @@ function Home() {
               <a href="#about"> Become an Affiliate</a><br/>
             </div>
           </div>
-          <div className="col-lg-2 col-6">
+          <div className="col-lg-2 col-6 mb-3">
             <span className="TitleMd"> Get in touch</span>
             <div className="mt-4 ">
               <a href="#about">Contact us</a><br/>
@@ -268,7 +273,7 @@ function Home() {
               <a href="#about"> Help/FAQs</a><br/>
             </div>
           </div>
-          <div className="col-lg-2 col-6">
+          <div className="col-lg-2 col-6 mb-3">
             <span className="TitleMd"> Join our community</span>
             <div className="socialIcon mt-4">
               <sanp> <a href="#social"><img src={Fb} className="btnImg mb-3" alt="social"/></a> </sanp>
@@ -288,6 +293,25 @@ function Home() {
       {/* Modal */}
       <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
+          {
+            show=== true ?  
+            <div class="modal-content pb-2">
+              <div class="modalHeader">
+              </div>
+              <div class="modal-body tellStroyForm p-4">
+                <div className="row">
+                  <div className="col-12 feedback text-center">
+                  <img src={Fed} alt="Img"/>
+                  <div className="textMd-s color-dark mb-3"> Thank you <br/>for sharing your story!</div>
+                  <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</span>
+                  </div>
+                </div>
+                <div class=" text-center mt-4 mb-4">
+                  <button type="button" class="btn btnMd-x  btnOR" data-bs-dismiss="modal" onClick={closeEntryClick}>Close</button>
+                </div>
+              </div>
+            </div>    
+            : 
           <div class="modal-content">
             <div class="modalHeader">
               Share your amazing story!
@@ -339,6 +363,8 @@ function Home() {
               <button type="button"   class="btn btnMd-x  btnOR" onClick={addEntryClick}>Share your story! </button>
             </div>
           </div>
+          }
+        
         </div>
       </div>
 
