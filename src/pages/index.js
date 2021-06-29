@@ -10,10 +10,10 @@ import BtnImg from '../assets/img/3.png';
 import Btn2Img from '../assets/img/5.png';
 import P1Img from '../assets/img/p1.png';
 import P2Img from '../assets/img/p2.png';
-import P3Img from '../assets/img/p3.png';
-import P4Img from '../assets/img/p4.png';
-import P5Img from '../assets/img/p5.png';
-import P6Img from '../assets/img/p6.png';
+// import P3Img from '../assets/img/p3.png';
+// import P4Img from '../assets/img/p4.png';
+// import P5Img from '../assets/img/p5.png';
+// import P6Img from '../assets/img/p6.png';
 import Fed from '../assets/img/f1.png';
 
 function Home() {
