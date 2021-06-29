@@ -228,7 +228,7 @@ function Home() {
 
               {
                 user === "vendor"  & user !=="customer"? 
-                <button type="button"   class="btn btnMd-x  btnOR" onClick={addEntryClickVendor}>Share your story2! </button> :""
+                <button type="button"   class="btn btnMd-x  btnOR" onClick={addEntryClickVendor}>Share your story! </button> :""
                
               }
 
